@@ -1,0 +1,32 @@
+{
+  "server": {
+    "name": "mcp-server",
+    "version": "1.0.0",
+    "description": "Dynamic MCP Server"
+  },
+  "tools": {
+    "enabled": true,
+    "fileManagement": {
+      "enabled": true,
+      "allowedDirectories": ["./", "C:/Users/GauravGupta/Documents"],
+      "maxFileSize": 10485760
+    },
+    "systemOperations": {
+      "enabled": true,
+      "allowedCommands": ["dir", "ls", "type", "cat", "echo", "date", "time", "hostname"]
+    },
+    "apiIntegration": {
+      "enabled": true,
+      "timeout": 30000
+    },
+    "database": {
+      "enabled": true,
+      "defaultDbPath": "./data/mcp.db"
+    }
+  },
+  "resources": {
+    "enabled": true,
+    "watchPaths": ["c:/Users/GauravGupta/Documents/mcp-server"],
+    "refreshInterval": 5000
+  }
+}
